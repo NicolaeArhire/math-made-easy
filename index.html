@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Math - Let's play a game</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="shortcut icon" href="https://img.icons8.com/color/344/help--v1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="nav_menu">
+      </div>
+    </header>
+    <main>
+      <div class="intro_container">
+        <div class="intro">
+          <span class="magic">
+            &#10146; In today's game you have to secretly choose a number between
+            <b class="no1-60">1</b> and <b class="no1-60">60</b> and pick every one of the below cards that contain your number.
+            <br /><br />
+            &#10146; Press "Done". <br /><br />
+            &#10146; Then, mysteriously, i'll find out your number. Let's begin:
+          </span>
+        </div>
+      </div>
+      <div class="numbers" id="numberSum">
+        <div class="no123">
+          <form class="check" name="xxx">
+            <label>Card 1</label>
+            <input type="checkbox" class="checkbox" id="c1" value="1" />
+          </form>
+          <img class="A" src="./game/A.png" width="550" height="150" alt="card1" />
+          <form class="check">
+            <label>Card 2</label>
+            <input type="checkbox" class="checkbox" id="c2" value="2" />
+          </form>
+          <img class="B" src="./game/B.png" width="550" height="150" alt="card2" />
+          <form class="check">
+            <label>Card 3</label>
+            <input type="checkbox" class="checkbox" id="c3" value="4" />
+          </form>
+          <img class="C" src="./game/C.png" width="550" height="150" alt="card3" />
+        </div>
+        <div class="no456">
+          <form class="check">
+            <label>Card 4</label>
+            <input type="checkbox" class="checkbox" id="c4" value="8" />
+          </form>
+          <img class="D" src="./game/D.png" width="550" height="150" alt="card4" />
+          <form class="check">
+            <label>Card 5</label>
+            <input type="checkbox" class="checkbox" id="c5" value="16" />
+          </form>
+          <img class="E" src="./game/E.png" width="550" height="150" alt="card5" />
+          <form class="check">
+            <label>Card 6</label>
+            <input type="checkbox" class="checkbox" id="c6" value="32" />
+          </form>
+          <img class="F" src="./game/F.png" width="550" height="150" alt="card6" />
+        </div>
+      </div>
+      <div class="last">
+        <button class="checkend" onclick="showAnswer()">Done</button>
+        <button class="checkend2" onclick="deleteAnswer()">Try again</button>
+      </div>
+      <div class="answer">
+        <span id="secret_text">And your secret number is.....</span>
+        <div id="secret"></div>
+        <span class="loader"></span>
+      </div>
+    </main>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
